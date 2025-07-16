@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Modules\Auth\Models\User;
 use Modules\Order\Database\Factories\OrderFactory;
+use Modules\Order\Enums\OrderStatus;
 use Modules\Order\Enums\ShippingMethod;
 
 class Order extends Model
@@ -32,6 +33,7 @@ class Order extends Model
 
     protected $casts = [
         'shipping_method' => ShippingMethod::class,
+        'status' => OrderStatus::class,
     ];
 
     public function getShippingMethodLabelAttribute(): string

@@ -27,7 +27,7 @@ class OrderFactory extends Factory
             'user_id'         => User::factory(),
             'total_price'     => fake()->numberBetween(100_000, 500_000),
             'shipping_method' => $shipping->value,
-            'shipping_cost'   => $shipping->cost(),
+            'shipping_cost'   => $shipping->price(),
         ];
     }
 
