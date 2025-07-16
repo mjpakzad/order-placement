@@ -3,7 +3,7 @@
 namespace Modules\Auth\Services\Auth;
 
 use Illuminate\Support\Facades\Hash;
-use Modules\Auth\app\Models\User;
+use Modules\Auth\Models\User;
 use Tymon\JWTAuth\Facades\JWTAuth;
 
 class AuthService
