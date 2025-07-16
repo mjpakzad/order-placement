@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Auth\Tests\Unit;
+namespace Modules\Product\Tests\Unit;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Schema;
